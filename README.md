@@ -4,6 +4,17 @@ This package contains a "Waze like" experience to allow users to launch actions.
 * <b>Launch a URL</b> - open a defined URL (could be external URL to direct to community page)
 * <b>Create New Record</b> - create a new Salesforce record (ex: Case) and default fields to defined set of values
 
+This component requires that a configuration setting be defined first. Four custom objects were created to support the configuration. You should create the objects in this order:
+
+1. <b>PSButtonLauncherSetting__c</b>
+
+2. <b>PSButtonLauncherCategory__c</b>
+
+3. <b>PSButtonLauncherItem__c</b>
+
+4. <b>PSButtonLauncherKeyValue__c</b>
+
+
 <b>Dependency:</b> Install the [PSCommon](https://github.com/thedges/PSCommon) package first
 
 ![alt text](https://github.com/thedges/PSButtonLauncher/blob/master/PSButtonLauncher.gif "Sample Image")
