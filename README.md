@@ -57,7 +57,7 @@ Next if you chose type of "Create a Record" in the previous step, you can define
 
 ![alt text](https://github.com/thedges/PSButtonLauncher/blob/master/PSButtonLauncher.gif "Sample Image")
 
-* The component configuration fields are:
+* The Lightning Component configuration fields are:
   - <b>Launcher Setting</b> - the PSButtonLauncher setting name as defined in the PSButtonLauncherSetting object
   - <b>Background Color</b> - the background color of main container (ex: #E8E8E8)
   - <b>Back Icon</b> - the URL to the back icon used to navigate in the button screen (default: /resource/PSButtonLauncherBackIcon)
