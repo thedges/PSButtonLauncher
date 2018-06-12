@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>PSButtonLauncherController</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>PSButtonLauncher</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>PSButtonLauncherCategory__c</members>
+        <members>PSButtonLauncherItem__c</members>
+        <members>PSButtonLauncherKeyValue__c</members>
+        <members>PSButtonLauncherSetting__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>PSButtonLauncherSetting__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>PSButtonLauncherBackIcon</members>
+        <members>PSButtonLauncherGPSIcon</members>
+        <members>WazeIcons</members>
+        <name>StaticResource</name>
+    </types>
+    <version>42.0</version>
+</Package>
