@@ -21,6 +21,13 @@
         <name>CustomTab</name>
     </types>
     <types>
+        <members>PSButtonLauncherCategory__c-PSButtonLauncherCategory Layout</members>
+        <members>PSButtonLauncherItem__c-PSButtonLauncherItem Layout</members>
+        <members>PSButtonLauncherKeyValue__c-PSButtonLauncherKeyValue Layout</members>
+        <members>PSButtonLauncherSetting__c-PSButtonLauncherSetting Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
         <members>PSButtonLauncherBackIcon</members>
         <members>PSButtonLauncherGPSIcon</members>
         <members>WazeIcons</members>
