@@ -25,8 +25,8 @@
                     <aura:iteration items="{!v.config.catList}" var="cat">
                         <div class="slds-col slds-p-around_xx-small slds-size_4-of-12 slds-small-size_3-of-12 slds-medium-size_2-of-12 slds-large-size_2-of-12">
                             <div class="slds-card launchItem" style="height: 100%;" onclick="{!c.onCategoryClick}" id="{!cat.id}">
-                                <img style="pointer-events: none; display: block; margin-left: auto; margin-right: auto;" src="{!cat.iconURL}" height="80" width="80"></img>
-                                <div style="text-align: center; pointer-events: none;">
+                                <img class="slds-p-top_xx-small slds-p-bottom_xx-small" style="pointer-events: none; display: block; margin-left: auto; margin-right: auto;" src="{!cat.iconURL}" height="80" width="80"></img>
+                                <div class="slds-p-bottom_xx-small" style="text-align: center; pointer-events: none;">
                                     <p class="slds-text-body_regular">{!cat.name}</p>
                                 </div>
                             </div>
@@ -35,8 +35,8 @@
                     <aura:iteration items="{!v.config.itemList}" var="item">
                         <div class="slds-col slds-p-around_xx-small slds-size_4-of-12 slds-small-size_3-of-12 slds-medium-size_2-of-12 slds-large-size_2-of-12 ">
                             <div class="slds-card launchItem" style="height: 100%;" onclick="{!c.onItemClick}" id="{!item.id}">
-                                <img style="pointer-events: none; display: block; margin-left: auto; margin-right: auto;" src="{!item.iconURL}" height="80" width="80"></img>
-                                <div style="pointer-events: none; text-align: center;">
+                                <img class="slds-p-top_xx-small slds-p-bottom_xx-small" style="pointer-events: none; display: block; margin-left: auto; margin-right: auto;" src="{!item.iconURL}" height="80" width="80"></img>
+                                <div class="slds-p-bottom_xx-small" style="pointer-events: none; text-align: center;">
                                     <p class="slds-text-body_regular">{!item.name}</p>
                                 </div>
                             </div>
@@ -47,15 +47,15 @@
                     <aura:iteration items="{!v.catConfig.itemList}" var="item">
                         <div class="slds-col slds-p-around_xx-small slds-size_4-of-12 slds-small-size_3-of-12 slds-medium-size_2-of-12 slds-large-size_2-of-12 ">
                             <div class="slds-card launchItem" style="height: 100%;" onclick="{!c.onItemClick}" id="{!item.id}">
-                                <img style="pointer-events: none; display: block; margin-left: auto; margin-right: auto;" src="{!item.iconURL}" height="80" width="80"></img>
-                                <div style="pointer-events: none; text-align: center;">
+                                <img class="slds-p-top_xx-small slds-p-bottom_xx-small" style="pointer-events: none; display: block; margin-left: auto; margin-right: auto;" src="{!item.iconURL}" height="80" width="80"></img>
+                                <div class="slds-p-bottom_xx-small" style="pointer-events: none; text-align: center;">
                                     <p class="slds-text-body_regular">{!item.name}</p>
                                 </div>
                             </div>
                         </div>
                     </aura:iteration>
                     <div class="slds-col slds-p-around_xx-small slds-size_4-of-12 slds-small-size_3-of-12 slds-medium-size_2-of-12 slds-large-size_2-of-12 ">
-                        <img style="display: block; margin-left: auto; margin-right: auto;" src="{!v.backIcon}" height="80" width="80" onclick="{!c.onBackClick}" ></img>
+                        <img class="slds-p-top_small" style="display: block; margin-left: auto; margin-right: auto;" src="{!v.backIcon}" height="80" width="80" onclick="{!c.onBackClick}" ></img>
                     </div>
                 </aura:if>
             </div>

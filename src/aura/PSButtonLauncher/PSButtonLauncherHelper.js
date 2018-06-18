@@ -88,12 +88,19 @@
                 }
                 else
                 { 
-                    var navEvt = $A.get("e.force:navigateToSObject");
-                    navEvt.setParams({
-                        "recordId": resp.data,
-                        "slideDevName": "detail"
-                    });
-                    navEvt.fire(); 
+                    /////////////////////////////////////////////////////////
+                    // only navigate to record if not anonymous/guest user //
+                    /////////////////////////////////////////////////////////
+                    var context = component.get("v.context");
+                    if (context.userType != 'Guest')
+                    {
+                        var navEvt = $A.get("e.force:navigateToSObject");
+                        navEvt.setParams({
+                            "recordId": resp.data,
+                            "slideDevName": "detail"
+                        });
+                        navEvt.fire(); 
+                    }
                 }
             }
         });

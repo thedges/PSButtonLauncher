@@ -9,8 +9,8 @@ public class PSButtonLauncherController {
         {         
             String configId = paramMap.get('configId');
             String prefix = paramMap.get('prefix');
-            PSButtonLauncherSetting__c setting = [SELECT Id, Name__c, (SELECT Id, Name__c, Icon_URL__c FROM PSButtonLauncherCategory__r)
-                                                  FROM PSButtonLauncherSetting__c  WHERE Id = :configId];
+            PSButtonLauncherSetting__c setting = [SELECT Id, Name__c, (SELECT Id, Name__c, Icon_URL__c FROM PSButtonLauncherCategory__r ORDER BY Name__c ASC)
+                                                  FROM PSButtonLauncherSetting__c  WHERE Id = :configId ORDER BY Name__c ASC];
             
             LauncherSetting stg = new LauncherSetting();
             stg.name = setting.Name__c;
@@ -41,7 +41,7 @@ public class PSButtonLauncherController {
                                                  Longitude_Field_API_Name__c, Confirmation_msg__c, Full_Address_Field_API_Name__c, Street_Field_API_Name__c, City_Field_API_Name__c,
                                                  State_Field_API_Name__c, Zipcode_Field_API_Name__c,
                                                  (SELECT Id, Key__c, Value__c FROM PSButtonLauncherKeyValues__r), PSButtonLauncherCategory__c 
-                                                 FROM PSButtonLauncherItem__c WHERE PSButtonLauncherCategory__c IN :catIdList])
+                                                 FROM PSButtonLauncherItem__c WHERE PSButtonLauncherCategory__c IN :catIdList ORDER BY Name__c ASC] )
             {
                 tmpItem = new LauncherItem();
                 tmpItem.id = item.Id;
@@ -84,7 +84,7 @@ public class PSButtonLauncherController {
                                                  Longitude_Field_API_Name__c, Confirmation_msg__c, Full_Address_Field_API_Name__c, Street_Field_API_Name__c, City_Field_API_Name__c,
                                                  State_Field_API_Name__c, Zipcode_Field_API_Name__c,
                                                  (SELECT Id, Key__c, Value__c FROM PSButtonLauncherKeyValues__r) 
-                                                 FROM PSButtonLauncherItem__c WHERE PSButtonLauncherSetting__c  = :configId])
+                                                 FROM PSButtonLauncherItem__c WHERE PSButtonLauncherSetting__c  = :configId  ORDER BY Name__c ASC])
             {
                 tmpItem = new LauncherItem();
                 tmpItem.id = item.Id;
