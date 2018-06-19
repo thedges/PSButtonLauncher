@@ -4,7 +4,7 @@
 
 This package contains a "Waze like" experience to allow users to launch actions using a button approach similar to Waze. Current actions supports are:
 * <b>Launch a URL</b> - open a defined URL (could be external URL or direct to community page)
-* <b>Create New Record</b> - create a new Salesforce record (ex: Case) and default fields to defined set of values
+* <b>Create New Record</b> - create a new Salesforce record (ex: Case or WorkOrder) and default fields to defined set of values
 
 This component requires that a configuration setting be defined first. Four custom objects were created to support the configuration. You should create the objects in this order:
 
