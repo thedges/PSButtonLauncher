@@ -16,14 +16,14 @@ This component requires that a configuration setting be defined first. Four cust
 
 2. <b>PSButtonLauncherCategory__c</b>
 
-Next create 1-to-many categories to group related functions/actions. For example in a 311 scenario, you could a category named "Animal Control" that could contain a variety of launcher actions defined in step 3.
+    Next create 1-to-many categories to group related functions/actions. For example in a 311 scenario, you could a category named "Animal Control" that could contain a variety of launcher actions defined in step 3.
 
    - <b>Name</b> - provide a name for the category (ex: "Animal Control")
    - <b>Icon URL</b> - provide a URL to an icon for this category. This can be a full "https://..." type URL or if you use static resources, use a value like "/resource/SampleIcon" where SampleIcon would be name of your static resource
    
 3. <b>PSButtonLauncherItem__c</b>
 
-Next create 1-to-many launcher items that will be related to your category defined above. For example the "Animal Control" scenario above, you could create some launcher items to send users to a defined URL for animal control info, or have a launcher item that will create a new case record and capture the current user, lat/lng, and GPS address location.
+    Next create 1-to-many launcher items that will be related to your category defined above. For example the "Animal Control" scenario above, you could create some launcher items to send users to a defined URL for animal control info, or have a launcher item that will create a new case record and capture the current user, lat/lng, and GPS address location.
 
    - <b>Name</b> - provide a name for the launcher item (ex: "Animal Loose")
    - <b>Icon URL</b> - provide a URL to an icon for this item. This can be a full "https://..." type URL or if you use static resources, use a value like "/resource/SampleIcon" where SampleIcon would be name of your static resource
@@ -49,7 +49,7 @@ Next create 1-to-many launcher items that will be related to your category defin
 
 4. <b>PSButtonLauncherKeyValue__c</b>
 
-Next if you chose type of "Create a Record" in the previous step, you can define 1-to-many default field values to store in the new object record. You 
+    Next if you chose type of "Create a Record" in the previous step, you can define 1-to-many default field values to store in the new object record. You 
 
    - <b>Key</b> - the field API name for the sObject defined in step #3 that you want to provide a value (ex: "Status" or "Sub-type__c")
    - <b>Value</b> - the value to store for that field
