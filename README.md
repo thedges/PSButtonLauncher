@@ -1,6 +1,6 @@
 # PSButtonLauncher
 
-[WORK IN PROGRESS...package and sample image to be uploaded soon] This package contains a "Waze like" experience to allow users to launch actions using a button approach similar to Waze. Current actions supports are:
+This package contains a "Waze like" experience to allow users to launch actions using a button approach similar to Waze. Current actions supports are:
 * <b>Launch a URL</b> - open a defined URL (could be external URL or direct to community page)
 * <b>Create New Record</b> - create a new Salesforce record (ex: Case) and default fields to defined set of values
 
