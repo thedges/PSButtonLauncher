@@ -55,7 +55,8 @@ This component requires that a configuration setting be defined first. Four cust
    - <b>Value</b> - the value to store for that field
 
 
-* The Lightning Component configuration fields are:
+* The Lightning Component has following configuration fields for you to edit in Lightning page editor or Community builder:
+
   - <b>Launcher Setting</b> - the PSButtonLauncher setting name as defined in the PSButtonLauncherSetting object
   - <b>Background Color</b> - the background color of main container (ex: #E8E8E8)
   - <b>Back Icon</b> - the URL to the back icon used to navigate in the button screen (default: /resource/PSButtonLauncherBackIcon)
