@@ -10,13 +10,13 @@ This component requires that a configuration setting be defined first. Four cust
 
 1. <b>PSButtonLauncherSetting__c</b>
 
-    First create this object to define a configuration setting. This drives the first drop-down list in the Lightning Component configuration screen. Here is definition of fields:
+    First create a record in this object to define a configuration setting. This drives the first drop-down list in the Lightning Component configuration screen. Here is definition of fields:
 
    - <b>Name</b> - provide a name for the configuration setting (ex: "311 Services")
 
 2. <b>PSButtonLauncherCategory__c</b>
 
-    Next create 1-to-many categories to group related functions/actions. For example in a 311 scenario, you could a category named "Animal Control" that could contain a variety of launcher actions defined in step 3.
+    Next create 1-to-many categories to group related functions/actions. For example in a 311 scenario, you could a category named "Animal Control" that could contain a variety of launcher actions defined in step 3 below.
 
    - <b>Name</b> - provide a name for the category (ex: "Animal Control")
    - <b>Icon URL</b> - provide a URL to an icon for this category. This can be a full "https://..." type URL or if you use static resources, use a value like "/resource/SampleIcon" where SampleIcon would be name of your static resource
