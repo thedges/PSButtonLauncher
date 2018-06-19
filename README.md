@@ -10,7 +10,7 @@ This component requires that a configuration setting be defined first. Four cust
 
 1. <b>PSButtonLauncherSetting__c</b>
 
-First create this object to define a configuration setting. This drives the first drop-down list in the Lightning Component configuration screen. Here is definition of fields:
+    First create this object to define a configuration setting. This drives the first drop-down list in the Lightning Component configuration screen. Here is definition of fields:
 
    - <b>Name</b> - provide a name for the configuration setting (ex: "311 Services")
 
