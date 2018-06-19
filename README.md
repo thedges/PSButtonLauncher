@@ -1,5 +1,7 @@
 # PSButtonLauncher
 
+![alt text](https://github.com/thedges/PSButtonLauncher/blob/master/PSButtonLauncher.gif "Sample Image")
+
 This package contains a "Waze like" experience to allow users to launch actions using a button approach similar to Waze. Current actions supports are:
 * <b>Launch a URL</b> - open a defined URL (could be external URL or direct to community page)
 * <b>Create New Record</b> - create a new Salesforce record (ex: Case) and default fields to defined set of values
@@ -53,10 +55,6 @@ Next if you chose type of "Create a Record" in the previous step, you can define
    - <b>Value</b> - the value to store for that field
 
 
-<b>Dependency:</b> Install the [PSCommon](https://github.com/thedges/PSCommon) package first
-
-![alt text](https://github.com/thedges/PSButtonLauncher/blob/master/PSButtonLauncher.gif "Sample Image")
-
 * The Lightning Component configuration fields are:
   - <b>Launcher Setting</b> - the PSButtonLauncher setting name as defined in the PSButtonLauncherSetting object
   - <b>Background Color</b> - the background color of main container (ex: #E8E8E8)
@@ -65,7 +63,9 @@ Next if you chose type of "Create a Record" in the previous step, you can define
   - <b>Navigate to Record</b> - load detail screen after creating new record
   - <b>GPS Icon</b> - the icon to show in top-right that lat/lng has been acquired (default: /resource/PSButtonLauncherGPSIcon)
   - <b>Show GPS Icon</b> - boolean to show the GPS icon in top-right
-  
+
+<b>Dependency:</b> Install the [PSCommon](https://github.com/thedges/PSCommon) package first
+
 <a href="https://githubsfdeploy.herokuapp.com">
   <img alt="Deploy to Salesforce"
        src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
