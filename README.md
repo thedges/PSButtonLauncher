@@ -1,5 +1,7 @@
 # PSButtonLauncher
 
+THIS SOFTWARE IS COVERED BY [THIS DISCLAIMER](https://raw.githubusercontent.com/thedges/Disclaimer/master/disclaimer.txt).
+
 ![alt text](https://github.com/thedges/PSButtonLauncher/blob/master/PSButtonLauncher.gif "Sample Image")
 
 This package contains a "Waze like" experience to allow users to launch actions using a button approach similar to Waze. Current actions supports are:
